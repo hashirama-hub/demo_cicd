@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: flaskapp_deploy
 spec:
+  replicas: 3
   selector:
     matchLabels:
       app: flaskapppp
