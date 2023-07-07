@@ -35,6 +35,16 @@ pipeline{
                 }
             }
         }
+        stage('Push Docker Image'){
+            steps{
+                script{
+                    docker.withRegistry('',REGISTRY_CREPS){
+                        docker_image.push("$BUILD_NUMBER")
+                        docker_image.push("laster")
+                    }
+                }
+            }
+        }
     }
         
 }
