@@ -1,0 +1,19 @@
+{
+    "jenkins-runner.jobs": {
+        "demo_cicd": {
+            "isDefault": true,
+            "runWith": "jenkins-master",
+            "name": "demo_cicd",
+            
+        }
+    },
+    "jenkins-runner.hostConfigs": {
+        "jenkins-master": {
+            "url": "http://35.200.18.149:8080",
+            "user": "maria_dev",
+            "password": "tuanlinh34",
+            "useCrumbIssuer": true,
+            
+        }
+    }
+}
